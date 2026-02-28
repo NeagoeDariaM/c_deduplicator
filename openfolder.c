@@ -23,6 +23,7 @@ int open_dir(char *directory, file *list, int *count) {
                 strcpy(list[*count].name, new->d_name);
                 list[*count].size = st.st_size;
                 list[*count].hash = dohash(path);
+                list[*count].del = 0;
                 (*count)++;
             }
         }

@@ -6,6 +6,7 @@ typedef struct {
     char name[256];
     long size;
     unsigned int hash;
+    int del;
 } file;
 
 int open_dir(char *directory, file *list, int *count);
