@@ -22,7 +22,7 @@ int main (void) {
 			if (list[i].size == list[j].size) {
 				if (list[i].hash == list[j].hash) {
 					printf("The file: %s is the same with: %s\n", list[i].name, list[j].name);
-					printf("Delete the copy? (y/n): ");
+					printf("\nDelete the copy? (y/n): ");
 					char ch;
 					scanf(" %c", &ch);
 					if (ch == 'y' || ch == 'Y') {
